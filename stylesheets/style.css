@@ -1,0 +1,270 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	font-family: 'Lora', serif;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* custom styles */
+html {
+	font-size: 16px;
+}
+body {
+	font-family: 'Lora', serif;
+}
+* {
+ box-sizing: border-box;
+}
+:root{
+	--blue:rgb(35,41,68);
+	--green:rgb(95,180,111);
+--footertext:(180,182,199);
+--text:rgb(164,165,172);
+--purple:rgb(234,236,251);
+
+}
+.container {
+	max-width: 1380px;
+	padding: 0 32px;
+	margin: 0 auto;
+	width: 100%;
+}
+.padding {
+	padding: 3rem 0;
+}
+.flex {
+	display: flex;
+	justify-content:space-between;
+}
+.flex-30 {
+	flex: 0 1 30%;
+}
+.flex-48 {
+	flex: 0 1 48%;
+}
+.full-width {
+	width: 100%;
+}
+.align-center {
+	align-items: center;
+}
+.justify-center {
+	justify-content: center;
+}
+.justify-between {
+	justify-content: space-between;
+}
+.text-center {
+	text-align: center;
+}
+.active {
+	color: var(--green);
+}
+.btn {
+	font-size:1.2rem;
+	padding: 1rem 1.4rem;
+	background-color: var(--green);
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+	display: inline-block;
+	border-radius: 0.2rem;
+}
+.btn-small {
+	font-size:1rem;
+	padding: 0.6rem 1rem;
+	background-color: var(--green);
+	text-transform: uppercase;
+	text-decoration: none;
+	color:#fff;
+	display: inline-block;
+	border-radius: 0.2rem;
+	margin-bottom: 1.2rem;
+}
+/* header */
+header {
+	/* padding: 0.7rem 0; */
+	background-color: var(--blue);
+
+}
+header a {
+	text-decoration: none;
+	font-size: 1.3rem;
+	color: #fff;
+	margin-left: 1.7rem;
+	text-transform: uppercase;
+	font-weight: 500;
+
+}
+/*hero-sec */
+.hero-sec {
+	background-color: var(--purple);
+}
+.hero-sec h1 {
+	color: #000;
+	text-transform: capitalize;
+	font-size: 2.4rem;
+	font-weight: 600;
+
+}
+.hero-sec p {
+	color: var(--text);
+	font-size: 1.2rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+	margin: 1.2rem 0;
+	
+}
+/* blog sec */
+.our-blog {
+	background-color: #fff;
+}
+h2 {
+	color: #000;
+	text-transform: capitalize;
+	font-size: 2.6rem;
+	font-weight: 400;
+	margin-bottom: 1.2rem;
+	
+}
+h3 {
+	color: #000;
+	text-transform: capitalize;
+	font-size: 1.6rem;
+	font-weight: 400;
+	margin-top: 0.6rem;
+	
+	font-family: 'Lora', serif;
+}
+.blog p {
+	 color: rgb(164,165,171);
+	font-size: 1rem;
+	font-weight: 400;
+	margin: 1rem 0;
+	line-height: 1.2;
+}
+/* footer */
+.footer strong {
+	color: rgb(156, 156, 156);
+	font-size: 1.4rem;
+	font-size: 2rem;
+	color: rgb(251, 252, 253);
+}
+.footer {
+	background-color: var(--blue);
+	color: var(--footertext);
+	font-size: 2.4rem;
+	color: rgb(251, 252, 253);
+	
+}
+ .footer i {
+	color: rgb(251, 252, 253);
+	margin-left: 1.2rem;
+}
+/* responsive web design for mobile */
+@media  screen and  (max-width: 768px)
+{
+	html {
+		font-size: 10px;
+	}
+	.flex-100 {
+		flex: 0 1 100%;	
+	}
+	.wrap {
+		flex-wrap: wrap;
+	}
+	.flex-90 {
+		flex: 0 1 90%;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.flex-start {
+		justify-content: start;
+	}
+	.flex-col {
+		flex-direction: column;
+	}
+	.order-1 {
+		order: -1;
+	}
+	.less-width {
+		width: 90%;
+	}
+	.margin-auto {
+		margin: 0 auto;
+	}
+	.margin-bottom {
+		margin: 1.2rem 0rem 2rem 0rem;
+	}
+
+
+}
+@media screen and (max-width:1200px){
+	.container {
+		max-width: 1140px;
+	}
+	
+}
+@media screen and (max-width:992px){
+	.container {
+		max-width: 960px;
+	}
+	
+}
+@media screen and (max-width:768px){
+	.container {
+		max-width: 720px;
+	}
+	
+}
+
+@media screen and (max-width:576px){
+	.container {
+		max-width: 540px;
+	}
+	
+}
+
+
+	
